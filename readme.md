@@ -4,7 +4,7 @@
 ### Example
 
 ```
-var opClient 	 = new OPSkins(APIKEY) // API Key see https://opskins.com/?loc=store_account
+var opClient = new OPSkins(APIKEY) // API Key see https://opskins.com/?loc=store_account
 
 opClient.on('ready', function() {
 	console.log("OPSkins API key works");
