@@ -1,4 +1,4 @@
-#node-opskins
+#opskins
 ### A node module to help automate opskins.com
 
 ### Example
@@ -33,6 +33,15 @@ opClient.on('apikeyError', function(err) {
     - `token` - An OPSkins security token
     - `sale_id` - "ID of the OPSkins sale that was created in response to this request"
     - `tradeoffer_id` - "ID of the trade offer that was sent in response to this request"
+
+# Events
+
+### ready
+Emitted when the API key works.
+
+### apikeyError
+Emitted when the API key returns a success not equal to 200 or when the response code doesn't give 200. AKA API Key doesn't work. I've never exceeded my API limit so I don't know if it returns rate limit errors.
+
 
 ### Todo:
 
