@@ -8,12 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LeCoffee/node-opskins.git"
+    "url": "git+https://github.com/LeCoffee/opskins.git"
   },
   "author": "LeCoffee",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LeCoffee/node-opskins/issues"
+    "url": "https://github.com/LeCoffee/opskins/issues"
   },
-  "homepage": "https://github.com/LeCoffee/node-opskins#readme"
+  "homepage": "https://github.com/LeCoffee/opskins#readme",
+  "dependencies": {
+    "request": "^2.69.0"
+  }
 }
