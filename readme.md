@@ -27,5 +27,5 @@ This isn't going to be a very maintained project unless it gains popularity, thi
 - Cashout
 - BumpItem
 - EditItem
-- ~SellItem~
+- ~~SellItem~~
 - GetPriceHistory

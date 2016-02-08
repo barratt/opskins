@@ -1,6 +1,6 @@
 {
   "name": "opskins",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A node module to help automate opskins.com",
   "main": "index.js",
   "scripts": {
