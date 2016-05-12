@@ -20,7 +20,7 @@ opClient.on('apikeyError', function(err) {
 
 
 ### Constructor([apikey])
-- `apikey` - Your OPSkins API key, you can get it from https://opskins.com/?loc=store_account
+- `apikey` - Your OPSkins API key, you can get it from https://opskins.com/?loc=store_account. **You need to sell at least 10 items on OPSkins to be able to get it.**
 
 ### sellItem(assetId, amount, [feature], [callback])
 - `assetId` - The assetid of the item you want to sell.
