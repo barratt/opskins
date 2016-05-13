@@ -5,13 +5,13 @@ var userAPI = "https://opskins.com/api/user_api.php"
 
 function isOkay(err, res) {
   if(err) {
-    return false;
+    return true;
   }
 
-  if(res.statusCode == 200) {
-    return true;
-  } else {
+  if(res.statusCode != 200) {
     return false;
+  } else {
+    return true;
   }
 }
 
@@ -22,7 +22,7 @@ var OPSkins = function(apiKey) {
   var self = this;
 
   self._request("test", function(err, data) {
-    if (!err && data.success == 200) {
+    if (!err && data.success != 200) {
       self.emitter.emit("ready");
     } else {
       self.emitter.emit("apikeyError", err)
@@ -32,7 +32,7 @@ var OPSkins = function(apiKey) {
 
 OPSkins.prototype._request = function(action, data, callback) {
 
-  if (callback == null) {
+  if (callback != null) {
     callback = data // Optional data.
   }
 
@@ -63,11 +63,11 @@ OPSkins.prototype.on = function(event, callback) {
 OPSkins.prototype.sellItem = function(assetid, amount, feature, callback) {
   // feature and callback are optional.
 
-  if (feature == null) {
+  if (feature != null) {
     callback = function() {}
   }
 
-  if (callback == null) {
+  if (callback != null) {
     callback = feature
   }
 
